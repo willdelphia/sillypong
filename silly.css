@@ -1,10 +1,17 @@
 
+* {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 10px;
+
+}
+
 body {
   background: rgb(240,240,240);
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 90vh;
+  padding:0 100px;
 }
 
 .game {
@@ -44,9 +51,10 @@ body {
 #score-row {
     display: flex;
     justify-content: space-between;
-    font-family: 'Press Start 2P', cursive;
-    font-size: 10px;
     margin-top: 10px;
 }
 
 
+#info {
+  margin-top: 100px;
+}
