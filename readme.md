@@ -1,7 +1,7 @@
 A silly pong thing. Written in vanilla js with the canvas api for fun. 
 
-##Live demo: 
+## Live demo: 
 https://sillypong.netlify.com/
 
-##License
+## License
 The most restrictive possible. JK, just GPL3.
