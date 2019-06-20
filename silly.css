@@ -63,6 +63,10 @@ body {
 
 #touch-areas {
   display: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 
@@ -76,7 +80,6 @@ body {
     grid-gap: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
-
   }
 
   #touch-areas > div {
