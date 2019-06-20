@@ -27,7 +27,6 @@ body {
   overflow: hidden;
 }
 
-
 #ball {
   width: 20px;
   height: 20px;
@@ -47,14 +46,51 @@ body {
   background:black;
 }
 
-
 #score-row {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
 }
 
+#desktop {
+  margin-top: 30px;
+}
+
 
 #info {
   margin-top: 100px;
 }
+
+#touch-areas {
+  display: none;
+}
+
+
+@media (pointer: coarse) { 
+
+  #touch-areas {
+    display: grid;
+    width: 300px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100%;
+    grid-gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+  }
+
+  #touch-areas > div {
+    background: white;
+    padding: 20px;
+    font-size: 30px;
+  }
+
+  #desktop {
+     display: none;
+  }
+
+ }
+
+
+
+ 

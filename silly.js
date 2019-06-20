@@ -90,6 +90,21 @@ function getRandomColor() {
     }
   });
 
+
+  body.addEventListener('touchmove', function(e){
+    var centerX = window.innerWidth / 2;
+    var touchX = e.targetTouches[0].clientX;
+
+    if(touchX < centerX) {
+      pMove = "L";
+    }
+    else {
+      pMove = "R";
+    }
+  });
+
+  
+
     
   body.addEventListener('touchend', function(e){
     pMove = null;
