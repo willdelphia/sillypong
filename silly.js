@@ -78,7 +78,7 @@ function getRandomColor() {
   }
   });
   
-  body.addEventListener('touchmove', function(e){
+  body.addEventListener('touchstart', function(e){
     var centerX = window.innerWidth / 2;
     var touchX = e.targetTouches[0].clientX;
 
