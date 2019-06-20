@@ -78,7 +78,24 @@ function getRandomColor() {
   }
   });
   
-  i = 0;
+  body.addEventListener('touchmove', function(e){
+    var centerX = window.innerWidth / 2;
+    var touchX = e.targetTouches[0].clientX;
+
+    if(touchX < centerX) {
+      pMove = "L";
+    }
+    else {
+      pMove = "R";
+    }
+  });
+
+    
+  body.addEventListener('touchend', function(e){
+    pMove = null;
+  });
+
+
   function step(timestamp) {
     if (!start) start = timestamp;
     
@@ -135,18 +152,15 @@ function getRandomColor() {
   
     if ( y < 0 ) {
       if(deltaY < 0)  {
-          console.log('top');
         deltaY = deltaY * -1;
       }
     }
     if( x < left) {
-      console.log(deltaX);
       if(deltaX < 0) {
         deltaX = deltaX * -1;
       } 
     }
     if( x > right) {
-      console.log(deltaX);
       if(deltaX > 0) {
         deltaX = deltaX * -1;
       } 
